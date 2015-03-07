@@ -9,12 +9,21 @@ title: Blog
     <div class="col-sm-8 col-sm-offset-2">
       <h1>Le blog pour tout savoir de l'actualité des prothèses dentaires </h1>
 
-       <h2>{% for post in site.posts %} </h2>
+
+<ul>
+      {% for post in site.posts %} 
        
-          <small>{{ post.date | date_to_string }}</small>
+        <li>
+       <h2><small>{{ post.date | date_to_string }}</small></h2>
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        
+        </li>
+
+          {% endfor %}
+</ul>
       
     </div>
   </div>
 </div>
+
+
+ 
