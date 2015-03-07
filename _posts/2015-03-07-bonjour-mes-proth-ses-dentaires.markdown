@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 category: blog
 title: Bonjour mes prothèses dentaires
 ---
