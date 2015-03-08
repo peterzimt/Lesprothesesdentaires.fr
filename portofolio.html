@@ -1,6 +1,6 @@
 ---
-layout : default
-title : Le sourire de nos patients
+layout: default
+title: Le sourire de nos patients
 ---
 
 <div class="vertical-spacer"></div>
@@ -13,18 +13,21 @@ title : Le sourire de nos patients
 	</div>
 
 	<div class="row">
-	{% for pic in site.data.portofolio %}
+		{% for pic in site.data.portofolio %}
 
-		<div class="col-sm-4">
-			<div class="thumbnail">
-								<img src="images/first_samples/{{ pic.filename }}" alt="">
-						
-					<div class="caption"><h2> {{ pic.category }}</h2>
-					</div>		
-			</div>	
-		</div>		
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="images/first_samples/{{ pic.filename }}" alt="">
+							<div class="caption">
+								<h2>{{ pic.category }}</h2>
+							</div>		
+				</div>	
+			</div>		
 
-	{% endfor %}
+
+
+		{% endfor %}
 				
 	</div>
+
 </div>
