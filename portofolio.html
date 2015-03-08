@@ -12,13 +12,24 @@ Title : Le sourire de nos patients
 
 
 	<div class="row">
+
+			{% for smiles in site.data.portofolio_protheses %}
+
 		<div class="col-sm-4">
 			<div class="thumbnail">
-					<img src="images/first samples/birds.png">
-					<div class="caption"><h2>Fais comme l'oiseau</h2></div>
+					<img src="images/first samples/{{ smiles.filename }}.png">
+					<div class="caption"><h2>{{ smiles.category }}</h2></div>
 					
 			</div>
 		</div>
+
+
+
+
+			{% endfor %}
+
+
+		
 	</div>	
 	</div>
 </div>
