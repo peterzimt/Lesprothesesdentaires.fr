@@ -6,20 +6,20 @@ title: Blog
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+    <div class="col-sm-4 col-sm-offset-4">
       <h1>Le blog pour tout savoir de l'actualité des prothèses dentaires </h1>
 
 
-<ul>
-      {% for post in site.posts %} 
-       
-        <li>
-       <h2><small>{{ post.date | date_to_string }}</small></h2>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </li>
+      <ul class="posts">
+          {% for post in site.posts %} 
+          -
+         <li> 
+            <small>{{ post.date | date_to_string }}</small>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
 
           {% endfor %}
-</ul>
+      </ul>
       
     </div>
   </div>
