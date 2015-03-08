@@ -1,16 +1,21 @@
--filename: museum.jpg
+-filename: museum.png
 catogory: museum
 color: black and white
 
--filename: tiger.jpg
+-filename: tiger.png
 catogory: animal
 color: color
 
--filename: human.jpg
+-filename: human.png
 catogory: animal
 color: color
 
--filename: birds.jpg
+-filename: house.png
 catogory: animal
 color: black and white
+
+-filename: birds.png
+catogory: animal
+color: black and white
+
 
