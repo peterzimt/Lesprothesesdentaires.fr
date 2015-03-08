@@ -10,15 +10,14 @@ Title : Le sourire de nos patients
 		<div class="col-xs-12">
 			<h1 class="text-center">Votre sourire est merveilleux</h1>
 		</div>
+	</div>
 
-
-		<div class="row">
-
+	<div class="row">
 	{% for smiles in site.data.portofolio_protheses %}
 
 		<div class="col-sm-4">
 			<div class="thumbnail">
-						<img src="images/first samples/{{ smiles.filename }}.png" alt="">
+						<img src="images/first samples/{{ smiles.filename }}" alt="">
 				
 				<div class="caption"><h2> {{ smiles.category }}</h2>
 				</div>		
