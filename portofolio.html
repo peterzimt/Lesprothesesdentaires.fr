@@ -3,33 +3,29 @@ layout : default
 Title : Le sourire de nos patients
 ---
 
+<div class="vertical-spacer"></div>
+
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">
-				<h1 class="text-center">Votre sourire est merveilleux</h1>
-
+			<h1 class="text-center">Votre sourire est merveilleux</h1>
 		</div>
 
 
-	<div class="row">
+		<div class="row">
 
-			{% for smiles in site.data.portofolio_protheses %}
+	{% for smiles in site.data.portofolio_protheses %}
 
 		<div class="col-sm-4">
-			<div class="thumbnail">
-					<img src="images/first samples/{{ smiles.filename }}.png">
-					<div class="caption"><h2>{{ smiles.category }}</h2></div>
-					
-			</div>
+				<div class="thumbnail">
+						<img src="images/first samples/{{ smiles.filename }}.png" alt="">
+				<div class="caption"><h2> {{ smiles.category }}</h2>
+				</div>		
+				</div>
 		</div>
 
-
-
-
-			{% endfor %}
-
-
-		
-	</div>	
+	{% endfor %}
+				
+		</div>	
 	</div>
 </div>
